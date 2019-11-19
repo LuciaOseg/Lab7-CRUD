@@ -4,7 +4,7 @@ const app = express()
 
 require('./db/mongoose.js')
 
-const router = require('/Users/luciaoseguera/Desktop/Lab7-CRUD/controllers/routes.js')
+const router = require('./controllers/routes.js')
 
 const port = process.env.PORT || 3000
 
