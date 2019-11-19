@@ -1,13 +1,14 @@
 
 const express = require('express')
-const users = require('./character')
+const characters = require('./character')
 
 const router = express.Router()
 
-router.get('/persons', users.getCharacter)
-router.get('/persons/:id', users.getByID)
-//router.post('/persons', users.createUser)
-//router.patch('/persons/:id', users.updateUser)
-//router.delete('/persons/:id', users.deleteUser)
+router.get('/persons', characters.getCharacter)
+router.get('/persons/:id', characters.getByID)
+router.post('/persons', characters.createCharacter)
+router.patch('/persons/:id', characters.updateByID)
+router.delete('/persons/:id', characters.deleteCharacter)
 
 module.exports = router
+
