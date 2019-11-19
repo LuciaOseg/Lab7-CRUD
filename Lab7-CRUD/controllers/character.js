@@ -1,4 +1,4 @@
-const Character = require('/Users/luciaoseguera/Desktop/Lab7-CRUD/models/character.js')
+const Character = require('../models/character.js')
 
 const getCharacter = function(req, res) {
   Character.find({}).then(function(characters) {
